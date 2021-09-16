@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+    <style>
+        .cricket {}
+
+        .cricket:hover {
+            transform: rotatey(60deg);
+            transform-origin: 100% 0%;
+            transition: transform ease-in .2s;
+        }
+
+        .ball {
+            width: 50px;
+            height: 50px;
+            background-color: red;
+            border: 1px solid red;
+            border-radius: 50%;
+            position: relative;
+            left: 280px;
+            bottom: 100px;
+            transition: transform 2s ease-in .2s;
+        }
+
+        .field:hover .ball {
+            transform: translate(1000px, 100px)
+        }
+    </style>
+</head>
+
+<body>
+    <div class="field">
+        <img class="cricket" src="cricket.jpeg" alt="">
+        <div class="ball"></div>
+    </div>
+
+</body>
+
+</html>
